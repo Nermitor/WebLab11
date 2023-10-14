@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main__refs {
+  width: fit-content;
+  margin: 0 auto 20px;
+}
+.main__refs a {
+  display: flex;
+}
+.main__images {
+  display: flex;
+  justify-content: space-around;
+}
+.main__columns {
+  -webkit-column-count: 4;
+  -moz-column-count: 4;
+  column-count: 4;
+  padding: 10px;
+}
+
+.poets__title {
+  text-align: center;
+}
+.poets__columns {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  padding: 10px;
+}
+.poets__columns p {
+  height: 400px;
+}
+
+.painter__title {
+  text-align: center;
+}
+.painter__paintings {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  align-content: flex-start;
+}
+.painter__paintings img {
+  object-fit: cover;
+  max-height: 300px;
+}
+
+/*# sourceMappingURL=styles.css.map */

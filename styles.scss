@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  &__refs {
+    width: fit-content;
+    margin: 0 auto 20px;
+
+    a {
+      display: flex;
+    }
+  }
+
+  &__images {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__columns {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
+    padding: 10px;
+
+
+  }
+}
+
+.poets {
+  &__title{
+    text-align: center;
+  }
+  &__columns {
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    padding: 10px;
+
+    p {
+      height: 400px;
+    }
+  }
+}
+
+.painter{
+  &__title{
+    text-align: center;
+  }
+  &__paintings{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    align-content: flex-start;
+
+    img{
+      object-fit: cover;
+      max-height: 300px;
+    }
+  }
+}
